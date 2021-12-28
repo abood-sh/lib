@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".AddCategoryScreen">
+
+    <EditText
+        android:id="@+id/categoryEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:drawableLeft="@drawable/ic_category"
+        android:drawablePadding="4dp"
+        android:hint="Category name"
+        android:layout_marginHorizontal="10dp"/>
+
+    <Button
+        android:id="@+id/categoryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="Create"
+        />
+</LinearLayout>

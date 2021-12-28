@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateBook">
+
+    <ImageView
+        android:id="@+id/UPimageIv"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/UPbuttonImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/UPbuttonImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_image"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="153dp" />
+
+    <View
+        android:id="@+id/UPview"
+        android:background="#888787"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/UPbuttonImage" />
+
+
+    <EditText
+        android:id="@+id/UPbookNameEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Book Name"
+        android:drawablePadding="5dp"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@id/UPview"
+        app:layout_constraintStart_toStartOf="@id/UPview"
+        app:layout_constraintTop_toBottomOf="@id/UPview" />
+
+    <EditText
+        android:id="@+id/UPauthorEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Author Name"
+        android:drawablePadding="5dp"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@id/UPbookNameEt"
+        app:layout_constraintStart_toStartOf="@id/UPbookNameEt"
+        app:layout_constraintTop_toBottomOf="@id/UPbookNameEt" />
+
+    <EditText
+        android:id="@+id/UPreleaseEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Release Year"
+        android:drawablePadding="5dp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@id/UPbookNameEt"
+        app:layout_constraintStart_toStartOf="@id/UPbookNameEt"
+        app:layout_constraintTop_toBottomOf="@id/UPauthorEt" />
+
+    <EditText
+        android:id="@+id/UPpagesEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Pages Number"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@id/UPbookNameEt"
+        app:layout_constraintStart_toStartOf="@id/UPbookNameEt"
+        app:layout_constraintTop_toBottomOf="@id/UPreleaseEt" />
+
+    <EditText
+    android:id="@+id/UPcategoryEt"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:hint="Pages Number"
+    android:inputType="number"
+    app:layout_constraintEnd_toEndOf="@id/UPpagesEt"
+    app:layout_constraintStart_toStartOf="@id/UPpagesEt"
+    app:layout_constraintTop_toBottomOf="@id/UPpagesEt" />
+
+    <Button
+        android:id="@+id/UPbuttonCreate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Update"
+        android:layout_marginHorizontal="4dp"
+        app:layout_constraintEnd_toEndOf="@id/UPcategoryEt"
+        app:layout_constraintStart_toStartOf="@id/UPcategoryEt"
+        app:layout_constraintTop_toBottomOf="@id/UPcategoryEt" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
